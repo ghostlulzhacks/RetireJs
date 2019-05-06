@@ -99,8 +99,8 @@ def vulnerableVersion(dataJson,name,version,url,scanDomain):
                 jsonArray['name'] = str(name)
                 jsonArray['version'] = str(version)
                 jsonArray['vulnerabilities'] = str(vuln["identifiers"]["summary"])
-                #jsonArray['url'] = str(url)
-                #jsonArray['domain'] = str(scanDomain)
+                jsonArray['url'] = str(url)
+                jsonArray['domain'] = str(scanDomain)
                 try:
                     jsonArray['CVE'] = "".join(str(cve + " ") for cve in vuln["identifiers"]["CVE"])
                 except:
