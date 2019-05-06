@@ -7,5 +7,5 @@ python retire-js.py -f test.txt
 
 python retire-js.py -d https://www.hackthissite.org/
 
-Download retirejs dataset:
+# Download retirejs dataset:
 wget https://raw.githubusercontent.com/RetireJS/retire.js/master/repository/jsrepository.json
